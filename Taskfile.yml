@@ -1,0 +1,17 @@
+version: '3'
+
+dotenv: ['.env']
+
+tasks:
+  check:
+    cmds:
+      - uvx ruff check main.py
+  fix:
+    cmds:
+      - uvx ruff check --fix main.py
+  format:
+    cmds:
+      - uvx ruff format main.py
+  run:
+    cmds:
+      - python3 main.py
