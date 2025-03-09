@@ -5,6 +5,7 @@ description = "script that copies dokuwiki page stuff to taglines config"
 readme = "README.md"
 requires-python = ">=3.11"
 dependencies = [
+    "in-place>=1.0.1",
     "ruff>=0.9.10",
 ]
 
