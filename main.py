@@ -31,7 +31,7 @@ def main():
     lines = load_file()
     if len(lines) > 6:
         items = ",".join(
-            [x.replace(",", ";").replace("'", "").strip() for x in choices(lines, k=7)]
+            [x.replace(",", "﹐").replace("'", "").strip() for x in choices(lines, k=7)]
         )
         print(items)
         update_config(items)
