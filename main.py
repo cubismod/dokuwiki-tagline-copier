@@ -22,7 +22,7 @@ def update_config(items: list[str]):
     with in_place.InPlace(config_file, backup_ext=".bak") as f:
         for line in f:
             if php_prop in line:
-                f.write(f"${php_prop} = '${items}';\n")
+                f.write(f"{php_prop} = '{items}';\n")
             else:
                 f.write(line)
 
